@@ -1,0 +1,43 @@
+name: "🚀 Submit an AI Tool / Model"
+description: "Submit a new generative AI tool or foundation model to be featured on Generative AI Picks."
+title: "[Submission]: <Tool Name>"
+labels: ["submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for contributing to **Generative AI Picks**! Please fill out the details below.
+        ⭐ *Don't forget to star this repository to support the open-source community!*
+  - type: input
+    id: tool_name
+    attributes:
+      label: "Tool / Model Name"
+      placeholder: "e.g., PixelForge Studio"
+    validations:
+      required: true
+  - type: input
+    id: website_url
+    attributes:
+      label: "Official Website URL"
+      placeholder: "https://yourtool.com"
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: "Category"
+      options:
+        - "Video Generation"
+        - "Multi-Model Studio"
+        - "Image Synthesis"
+        - "Audio & Voice"
+        - "Creative Workflow"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "One-line Description (Max 150 chars)"
+      placeholder: "A concise description highlighting key strengths and capabilities."
+    validations:
+      required: true
